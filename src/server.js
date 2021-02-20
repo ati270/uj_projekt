@@ -13,7 +13,7 @@ app.get('/*', function(req,res){
     res.sendFile(fullPath);
 })
 
-let port = process.enc.PORT = 7000;
+let port = process.env.PORT = 7000;
 app.listen(port);
 
 console.log('Server started running..');
